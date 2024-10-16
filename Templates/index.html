@@ -1,0 +1,15 @@
+<form method="POST">
+    {% csrf_token %}
+    
+    <h3>Form A</h3>
+    {{ form_a.as_p }}
+    <button type="submit" name="submit_form_a">Submit Form A</button>
+    
+</form>
+<form method="POST">
+    {% csrf_token %}
+   
+    <h3>Form B</h3>
+    {{ form_b.as_p }}
+    <button type="submit" name="submit_form_b">Submit Form B</button>
+</form>
